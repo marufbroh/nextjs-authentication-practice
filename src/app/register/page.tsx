@@ -22,11 +22,11 @@ const RegisterPage = () => {
   const router = useRouter();
 
   const onSubmit = async (data: UserData) => {
-    console.log(data);
+    // console.log(data);
 
     try {
       const res = await registerUser(data);
-      console.log(res);
+      // console.log(res);
       if(res.success){
         alert(res.message);
         router.push("/login")
